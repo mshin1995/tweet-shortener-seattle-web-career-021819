@@ -35,7 +35,7 @@ def selective_tweet_shortener(tweet)
     if tweet.length > 140
       puts word_substituter(tweet)
     elseif tweet.length <= 140
-      puts tweet
+      tweet
     end
   end
 end
