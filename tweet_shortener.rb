@@ -18,5 +18,5 @@ def word_substituter(tweet)
       new_tweet << word
     end
   end
-
+  new_tweet.join(" ")
 end
