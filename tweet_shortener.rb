@@ -11,12 +11,12 @@ end
 
 def word_substituter(tweet)
   new_tweet = []
-  new_tweet = tweet.split(" ").collect do |word|
+  tweet.split(" ").collect do |word|
     if dictionary.keys.include?(word.downcase)
       word = dictionary[word.downcase]
     else
       word
     end
   end
-  new_tweet.join(" ")
+
 end
