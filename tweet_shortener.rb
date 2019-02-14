@@ -25,17 +25,17 @@ def word_substituter(tweet)
 end
 
 def bulk_tweet_shortener(tweet)
-  tweet.each do |tweet|
-    puts word_substituter(tweet)
+  tweet.each do |phrase|
+    puts word_substituter(phrase)
   end
 end
 
 def selective_tweet_shortener(tweet)
-  tweet.split(" ").collect do |tweet|
-    if tweet.length > 140
-      puts word_substituter(tweet)
-    elsif tweet.length <= 140
-      tweet
+  tweet.split(" ").each do |phrase|
+    if phrase.length > 140
+      puts word_substituter(phrase)
+    elsif phrase.length <= 140
+      phrase
     end
   end
 end
