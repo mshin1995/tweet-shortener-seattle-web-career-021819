@@ -1,3 +1,4 @@
 def dictionary
-  hash = {"hello" }
+  hash = {"hello" => "hi", "to, two, too" => "2", "for, four" =>
+  }
 end
