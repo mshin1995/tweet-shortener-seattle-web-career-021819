@@ -1,3 +1,3 @@
 def dictionary
-  
+  hash = {}
 end
